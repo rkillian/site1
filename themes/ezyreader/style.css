@@ -12,7 +12,7 @@ License URI: license.txt
 
 /* Misc */
 body {margin:0; padding:0; font-family: 'Open Sans', sans-serif;
-background-color:#fff; font-size: 13px;letter-spacing: 1px;line-height: 21px; color:#000; }
+background-color:#00ff7f; font-size: 13px;letter-spacing: 1px;line-height: 21px; color:#000; }
 h1, h2, h3, h4, h5, h6{line-height:normal; text-transform:capitalize;  font-family: 'Roboto',sans-serif; }
 .bypostauthor {}
 .sticky {}
@@ -25,7 +25,7 @@ img {border:0;}
 .logo{ float:left;}
 .logo img{max-width:100%; width:auto;}
 .logo a{color:#000; text-decoration:none;}
-.logo a:hover{color:#118D78;}
+.logo a:hover{color:#336633;}
 a{color:#000; text-decoration:none;}
 a:hover {-webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; color:#118D78;}
 .header-widget{float:right; width:auto; max-width:500px; text-align:right;}
@@ -60,7 +60,7 @@ hr {border:0; background-color:#abaaaa;}
 p{}
 #menu-icon{display:none; font-size:16px; }
 #menu-icon:hover {}
-.nav-responsive {display:none; background-color:#000;}
+.nav-responsive {display:none; background-color:#f5da5f;}
 .nav-responsive ul{list-style-type:none; margin:0; padding:0; }
 .nav-responsive ul li {}
 .nav-responsive ul li ul li {padding-left:10px;}
