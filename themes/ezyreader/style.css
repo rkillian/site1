@@ -1,19 +1,20 @@
 /*
 Theme Name: EzyReader
 Theme URI: http://www.techtivesolutions.com/wpthemes/ezyreader/
-Description: Ezyreader Wordpress theme for blogs, magazine style websites, adsense websites.
+Description: Ezyreader Wordpress theme for blogs, magazine style websites, adsense websites. EzyReader is a responsive business Minimal setting theme which can be used for personal or blog type website. It supports three page layouts, custom widgets, custom logo, drop down menu, threaded comments.
+You can add your own logo from the wordpress admin.
 Author: Siddharth Pauhal
 Author URI: https://twitter.com/sidpauhal
-Version: 1.2.4
-Tags: white, light, one-column, two-columns, right-sidebar, flexible-width, featured-images, custom-menu, post-formats, sticky-post, threaded-comments, full-width-template
+Version: 1.2.5
+Tags: white, light, one-column, two-columns, right-sidebar, fluid-layout, featured-images, custom-menu, post-formats, sticky-post, threaded-comments, full-width-template
 License: GNU General Public License
 License URI: license.txt
 */
 
 /* Misc */
 body {margin:0; padding:0; font-family: 'Open Sans', sans-serif;
-background-color:#00ff7f; font-size: 13px;letter-spacing: 1px;line-height: 21px; color:#000; }
-h1, h2, h3, h4, h5, h6{line-height:normal; text-transform:capitalize;  font-family: 'Roboto',sans-serif; }
+background-color:#eee; font-size: 13px;letter-spacing: 1px;line-height: 21px; color:#000; }
+h1, h2, h3, h4, h5, h6{line-height:normal; text-transform:capitalize;  font-family: 'Roboto',sans-serif; font-weight:300; }
 .bypostauthor {}
 .sticky {}
 .gallery-caption {}
@@ -25,9 +26,9 @@ img {border:0;}
 .logo{ float:left;}
 .logo img{max-width:100%; width:auto;}
 .logo a{color:#000; text-decoration:none;}
-.logo a:hover{color:#336633;}
-a{color:#000; text-decoration:none;}
-a:hover {-webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; color:#118D78;}
+.logo a:hover{color:#118D78;}
+a{color:#118D78; text-decoration:none;}
+a:hover {-webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; color:#000;}
 .header-widget{float:right; width:auto; max-width:500px; text-align:right;}
 .header-widget img {width:auto; max-width:500px;}
 .alignleft{float:left;} .alignright{float:right;}
@@ -57,10 +58,10 @@ a.linkred:hover {color:#000; text-decoration:underline;}
 hr {border:0; background-color:#abaaaa;}
 .btnlink{background-color:#118d78; border: 0 none; color: #FFFFFF !important;cursor: pointer;display: inline;padding: 7px 10px;text-align: center;text-decoration: none;}
 .btnlink:hover{background-color:#000;}
-p{}
+p{ color: #4E4E4E;  font-size: 14px; line-height: 26px;}
 #menu-icon{display:none; font-size:16px; }
 #menu-icon:hover {}
-.nav-responsive {display:none; background-color:#f5da5f;}
+.nav-responsive {display:none; background-color:#000;}
 .nav-responsive ul{list-style-type:none; margin:0; padding:0; }
 .nav-responsive ul li {}
 .nav-responsive ul li ul li {padding-left:10px;}
@@ -76,8 +77,7 @@ margin-left: 10px;margin-right: 20px;}
 .column-content{float: left;height: auto !important;margin-bottom: 10px;min-height: 400px;width: 470px; margin-left:15px; margin-right:5px;}
 .sidebar{width:230px; float:left; margin-left:10px; }
 .mrgnright{ margin-right:15px;}
-.column-one-third{width:300px; float:left; margin:10px; margin-bottom:30px;
-background-image:url(../images/shadow.png); background-repeat:no-repeat; background-position:bottom center; padding-bottom:32px;
+.column-one-third{width:300px; float:left; margin:10px; margin-bottom:30px; background-image:url(../images/shadow.png); background-repeat:no-repeat; background-position:bottom center; padding-bottom:32px;
 }
 .column-one-third h3{text-transform:uppercase;}
 .fullwidth{width:auto; padding:10px; float: left; margin-bottom: 40px;}
@@ -87,10 +87,14 @@ background-image:url(../images/shadow.png); background-repeat:no-repeat; backgro
 
 /* Posts Styling starts */
 .pagetitle{border-bottom:2px solid #63a79b; margin-bottom:10px; padding:10px;}
-.post{border-bottom:2px solid #eee; padding-bottom:20px; margin-bottom:30px; float:left; display:inline; width:100%; }
-.post h2{}
-.post a{ text-decoration:none; color:#000;}
-.post a:hover {color:#118D78;}
+.post{border-bottom:1px solid #eee; padding-bottom:20px; margin-bottom:30px; float:left; display:inline; width:100%; }
+.post table{border-collapse:collapse;}
+.post table th{background-color: #F8F8F8; border: 1px solid #CCCCCC; padding: 10px;}
+.post table td{border: 1px solid #CCCCCC; padding: 10px;}
+.post h2 a{ text-decoration:none; color:#000;}
+.post h2 a:hover{ text-decoration:none; color:#118D78;}
+.post a{ text-decoration:none; color:#118D78;}
+.post a:hover {color:#000;}
 .postdetails{color:#666; padding:5px 0px; border-top:1px solid #eee; border-bottom:1px solid #eee;   font-size:11px; text-transform:capitalize; margin-bottom:10px; background-color: #F5F5F5; padding:2px 5px; }
 .postdetails a{color:#666;}
 .wp-post-image{border:5px solid #fafafa; float:left; display:inline; margin-right:15px; margin-bottom:10px;}
@@ -134,7 +138,7 @@ input.searchinput{	border: 1px solid #ddd; font-size: 12px; padding: 8px 4px; wi
 /* Form element Styling ends */
 
 /* Comment Form Styling Starts */
-.comment-respond{background-color:#fafafa; float:left; padding:10px;}
+.comment-respond{background-color:#fafafa; float:left; padding:10px; width:97%;}
 .comment-reply-title{border-bottom:1px solid #eee; padding-bottom:10px;}
 .comment-reply-title a{color:#000; text-decoration:none;}
 .comment-reply-title a:hover{color:#118D78;}
@@ -178,7 +182,7 @@ div.aligncenter {display: block; margin-left: auto;	margin-right: auto;}
 #footer {width:100%;height:auto;float:left; display:inline;color:#fff;padding:20px 0px; background-color:#000; }	
 .footerwrap {width:960px;margin:0 auto;	}
 .footerwrap .widget {border-right: 1px dotted #333; display: inline; float: left; height: auto; padding:0 14px; width: 210px; color:#666; background-image:none;}
-.footerwrap .widget h3{ text-transform:uppercase;  color:#fff; border-bottom:1px dotted #333; padding-bottom:5px;}
+.footerwrap .widget h2{ text-transform:uppercase;  color:#fff; border-bottom:1px dotted #333; padding-bottom:5px;}
 .footerwrap .widget a{text-decoration:none; color:#118D78;}
 .footerwrap .widget a:hover {color:#ddd;}
 .footerwrap .widget img {width:auto; max-width:100%;}
@@ -190,12 +194,12 @@ div.aligncenter {display: block; margin-left: auto;	margin-right: auto;}
 .footerwrap .widget ul li a.hide{color:#1A1A1A; border:none;}
 .footerwrap .widget ul li a:hover{ -webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 
-.footerwrap .widget ul li a.fb{ background-image: url("images/social.png");
+ .widget ul li a.fb{ background-image: url("images/social.png");
     background-position: 0 0px;  background-repeat: no-repeat;
     display: block; padding: 0px 30px; text-decoration: none;}
-.footerwrap .widget ul li a.tw{ background-image:url(images/social.png); background-position:0px -40px; background-repeat:no-repeat; padding:0px 30px; display:block; text-decoration:none; }
-.footerwrap .widget ul li a.yt{ background-image:url(images/social.png); background-position:0px -80px; background-repeat:no-repeat; padding:0px 30px; display:block; text-decoration:none; }
-.footerwrap .widget ul li a.gplus{ background-image:url(images/social.png); background-position:0px -120px; background-repeat:no-repeat; padding:0px 30px; display:block; text-decoration:none;}
+ .widget ul li a.tw{ background-image:url(images/social.png); background-position:0px -40px; background-repeat:no-repeat; padding:0px 30px; display:block; text-decoration:none; }
+ .widget ul li a.yt{ background-image:url(images/social.png); background-position:0px -80px; background-repeat:no-repeat; padding:0px 30px; display:block; text-decoration:none; }
+ .widget ul li a.gplus{ background-image:url(images/social.png); background-position:0px -120px; background-repeat:no-repeat; padding:0px 30px; display:block; text-decoration:none;}
 .footerwrap .widgetlast {float: right !important; border:none !important; margin:0; padding:0;}
 .footerwrap .widgetlast ul li {border:none;}
 .footercopyright{ border-top: 1px solid #222222; color: #666; font-size: 12px; height: auto; margin-top: 20px; padding-top: 10px;

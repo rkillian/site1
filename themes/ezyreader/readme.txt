@@ -2,9 +2,9 @@
 
 Theme Name: EzyReader
 Theme URI: http://www.techtivesolutions.com/wpthemes/ezyreader/
-Version: 1.2.4
+Version: 1.2.5
 Requires at least: WP 3.5+
-Tested up to: WP 3.8.1
+Tested up to: WP 3.9
 
 Author: Siddharth Pauhal  
 Author URI: http://techtivesolutions.com/

@@ -49,7 +49,7 @@ function ezyreader_setup(){
 	
 	
 	add_theme_support( 'custom-background', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'eeeeee',
 	) );
 	
 	
@@ -130,8 +130,8 @@ function ezyreader_widgets(){
         'id' => 'footer-widget',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h3 class="">',
-        'after_title' => '</h3>'
+        'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>'
     ));
 	////////////////////
    register_widget( 'social_widget' );
@@ -164,4 +164,3 @@ function ezyreader_theme_customizer( $wp_customize ) {
 	) ) );
 }
 add_action('customize_register', 'ezyreader_theme_customizer');
-

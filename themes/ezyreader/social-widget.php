@@ -58,13 +58,20 @@ class Social_Widget extends WP_Widget {
      <?php // esc_url( $url, $protocols, $_context ); Sanitize Urls ?> 
      
         <div class="widget">
-            <h3><?php echo $title; ?></h3>
+            <h2 class="widget-title"><?php echo $title; ?></h2>
                 <ul>
+					<?php if ($fb!="") { ?>
                     <li><a class="fb" href="<?php echo esc_url($fb); ?>">Facebook</a></li>
+                    <?php } ?>  
+                    <?php if ($tw!="") { ?> 
                     <li><a class="tw" href="<?php echo esc_url($tw); ?>">Twitter</a></li>
+                    <?php } ?>
+                    <?php if ($yt!="") { ?>
                     <li><a class="yt" href="<?php echo esc_url($yt); ?>">Youtube</a></li>
+                    <?php } ?>
+                    <?php if ($gplus!="") { ?>
                     <li><a class="gplus" href="<?php echo esc_url($gplus); ?>">Google+</a></li>
-                      
+                    <?php } ?>
                 </ul>
         </div>
 
